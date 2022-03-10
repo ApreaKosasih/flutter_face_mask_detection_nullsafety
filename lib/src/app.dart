@@ -18,7 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   initCamera() {
     cameraController = CameraController(
-      cameras[0],
+      cameras[1],
       ResolutionPreset.medium,
       imageFormatGroup: ImageFormatGroup.yuv420,
     );
@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
         imageStd: 127.5, // defaults to 127.5
         rotation: 90, // defaults to 90, Android only
         numResults: 2, // defaults to 5
-        threshold: 0.1, // defaults to 0.1
+        threshold: 0.5, // defaults to 0.1
         asynch: true // defaults to true
         );
 
